@@ -1,0 +1,276 @@
+
+body {
+    background: rgba(181, 213, 195, 1.0)
+}
+
+a:link {
+    background: rgba(0,0,0, 0.1);
+    color: rgba(255,255,255, 1.0);
+}
+
+a:visited {
+    background: rgba(0,0,0, 0.1);
+    color: rgba(255,255,255, 1.0);
+}
+
+/**********************************************************************************************************************/
+/******************                             Begin Top Menu Bar           			                              */
+/**********************************************************************************************************************/
+
+/* Top Menu Bar */
+.nav-top {
+    position: fixed;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 30px;
+    font-family: Arial;
+    text-shadow: 1px 1px 1px #000000;
+    border-bottom: 1px solid rgba(0,0,0, 0.3);
+    background: rgba(17, 170, 17, 1.0);
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.4),					/* Outter Dark Shadow */
+    inset 0 -1px rgba(255,255,255, 0.3), 		/* Top light Line */
+    inset 0 10px rgba(255,255,255, 0.2), 		/* Top Light Shadow */
+    inset 0 -10px 20px rgba(255,255,255, 0.25), 	/* Sides Light Shadow */
+    inset 0 15px 30px rgba(0,0,0, 0.25);		/* Dark Background */
+}
+
+/*  */
+.nav-top li ul {
+    list-style: none;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+/* Menu Button Section (non-hover) */
+.nav_menu {
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+/* Individual Menu Buttons */
+.nav_menu li {
+    list-style: none;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #CCCCCC;
+    cursor: default;
+    width: 80px;
+    padding: 7px 9px 9px 9px;
+    border-right: 1px solid rgba(0,0,0, 1);
+}
+
+/* Drop-Down List (non-hover / hidden) */
+.nav_menu li ul.dropdown {
+    display: none;
+    width: 197px;
+}
+
+/* Drop-Down Menus (hover / shown) */
+.nav_menu li:hover ul.dropdown {
+    display: block;
+    position: absolute;
+    margin: 0px 0px 0px -10px;
+    width: 197px;
+    top: 31px;
+    border: 1px solid #000000;
+    border-top: none;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.5),					/* Outter Dark Shadow */
+    inset 0 1px rgba(128,128,128, 0.3), 		/* Top light Line */
+    inset 0 10px rgba(128,128,128, 0.2), 		/* Top Light Shadow */
+    inset 0 10px 20px rgba(128,128,128, 0.25), 	/* Sides Light Shadow */
+    inset 0 -15px 30px rgba(0,0,0, 0.25);		/* Dark Background */
+    border-radius: 0px 0px 12px 12px;
+    overflow:hidden;
+}
+
+/* Drop-Down Menu Link list hover */
+.nav_menu li:hover {
+    background: rgba(0,0,0, 0.4);
+    color: #FFFFFF;
+}
+
+/* Drop-Down Menu Individual Link Items */
+.nav_menu li:hover li{
+    float: none;
+    background: rgba(17,170,17, 0.4);
+    border: none;
+    border-top: 1px solid #000000;
+    padding: 12px 10px 12px 30px;
+    width: 157px;
+}
+
+.nav_menu li:hover li:hover{
+    background: rgba(17,100,17, 1.0);
+}
+
+ul.nav_menu li.mobilemenu {
+    display: none;
+}
+
+/**********************************************************************************************************************/
+/******************                      End of Top Menu Bar           			                                      */
+/**********************************************************************************************************************/
+
+
+
+/**********************************************************************************************************************/
+/******************                      Begin Bottom Menu Bar           			                                  */
+/**********************************************************************************************************************/
+
+
+/* Bottom Menu Bar */
+.nav-bottom {
+    position: fixed;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 30px;
+    font-family: Arial;
+    text-shadow: 1px 1px 1px #000000;
+    border-top: 1px solid rgba(0,0,0, 0.3);
+    background: rgba(17,170,17, 1.0);
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.4),					/* Outter Dark Shadow */
+    inset 0 1px rgba(255,255,255, 0.3), 		/* Top light Line */
+    inset 0 10px rgba(255,255,255, 0.2), 		/* Top Light Shadow */
+    inset 0 10px 20px rgba(255,255,255, 0.25), /* Sides Light Shadow */
+    inset 0 15px 30px rgba(0,0,0, 0.25);		/* Dark Background */
+
+}
+/**********************************************************************************************************************/
+/******************                      End Bottom Menu Bar           			                                  */
+/**********************************************************************************************************************/
+
+
+
+
+/**********************************************************************************************************************/
+/******************                      Begin Content Section    			                        		  	      */
+/**********************************************************************************************************************/
+
+.content {
+    margin: 40px auto;
+    width: auto;
+    border: 1px solid rgba(0,0,0, 1);
+    background: rgba(0,0,0, 0.3);
+    border-radius: 40px;
+}
+
+.content-box {
+    margin: 10px auto;
+    text-align: left;
+    width: 350px;
+}
+
+/**********************************************************************************************************************/
+/******************                      End Content Section    			                        		  	      */
+/**********************************************************************************************************************/
+
+
+
+@media only screen and (max-width: 550px) {
+
+    ul.nav_menu {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        border: none;
+    }
+
+    ul.nav_menu li {
+        display: none;
+    }
+
+    ul.nav_menu li.mobilemenu {
+        float: left;
+        display: block;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        background: rgba(17, 170, 17, 1.0)
+
+
+    }
+
+    ul.nav_menu li.mobilemenu a {
+        list-style: none;
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+        cursor: default;
+        width: 60px;
+        padding: 3px 0px 3px 0px;
+        background: rgba(0,0,0, 0.2);
+    }
+
+    ul.nav_menu.responsive {
+        width: 100%;
+        position: absolute;
+        padding: 4px 4px;
+        top: 0px;
+        left: 0px;
+        border: 1px solid #000000;
+        border-top: none;
+        background: rgba(17,100,17, 0.7);
+        box-shadow: 0 2px 6px rgba(0,0,0, 0.5),
+        inset 0 1px rgba(128,128,128, 0.3),
+        inset 0 10px rgba(128,128,128, 0.2),
+        inset 0 10px 20px rgba(128,128,128, 0.25),
+        inset 0 -15px 30px rgba(0,0,0, 0.25);
+        border-radius: 0px 0px 40px 40px;
+        overflow:hidden;
+    }
+
+
+    ul.nav_menu.responsive li.mobilemenu {
+        float: left;
+        display: block;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    ul.nav_menu.responsive li.mobilemenu a {
+        list-style: none;
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFF00;
+        cursor: default;
+        width: 60px;
+        padding: 3px 0px 3px 0px;
+    }
+
+
+    ul.nav_menu.responsive li {
+        float: none;
+        display: block;
+        width: 100%;
+        border: 1px solid #000000;
+        border-bottom: none;
+        overflow: hidden;
+        background: rgba(0,0,0, 0.2);
+    }
+
+    ul.nav_menu.responsive li a {
+        display: block;
+        text-align: center;
+
+    }
+
+}
