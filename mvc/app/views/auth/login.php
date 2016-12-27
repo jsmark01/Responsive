@@ -1,15 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: steve
- * Date: 12/20/16
- * Time: 9:23 AM
- */
+<?php require_once '../app/views/layouts/login.header.partial.php'; ?>
 
-?>
-<?=$data['error']; ?>
 
-<form method="post" action="../auth/validate">
+<form method="post" action="<?=$urlBase . 'auth/validate' ?>">
     <table>
         <tr>
             <td>Username:</td>
@@ -20,7 +12,16 @@
             <td><input type="password" name="password"></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit" value="Login"></td>
+            <td></td>
+            <td><input type="submit" value="Login"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><?php echo $data['error'] ?></td>
         </tr>
     </table>
 </form>
+
+
+<?php require_once '../app/views/layouts/footer.partial.php'; ?>
+
+

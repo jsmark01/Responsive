@@ -1,12 +1,22 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: steve
- * Date: 12/19/16
- * Time: 9:26 AM
- */
 
 class Home extends Controller {
 
+    public function home()
+    {
+        if (isset($_SESSION['username'])) {
+            $this->view('home/home');
+        } else {
+            $this->view('home/index');
+        }
+    }
 
+    public function index()
+    {
+        if (isset($_SESSION['username'])) {
+            $this->view('home/home');
+        } else {
+            $this->view('home/index');
+        }
+    }
 }

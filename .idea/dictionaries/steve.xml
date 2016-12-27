@@ -1,3 +1,8 @@
 <component name="ProjectDictionaryState">
-  <dictionary name="steve" />
+  <dictionary name="steve">
+    <words>
+      <w>dbconnection</w>
+      <w>dbsettings</w>
+    </words>
+  </dictionary>
 </component>

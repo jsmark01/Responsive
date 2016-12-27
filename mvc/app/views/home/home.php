@@ -1,14 +1,13 @@
 <?php
 
-  //  require_once '../layouts/header.php';
+require_once '../app/views/layouts/header.partial.php';
 
-//
+
 
 ?>
 
-
-Welcome, <?=$data['username']; ?>
-
+Welcome, <?= $_SESSION["username"]; ?>.
 
 
+<?php require_once '../app/views/layouts/footer.partial.php'; ?>
 

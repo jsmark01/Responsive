@@ -11,6 +11,7 @@ class dbconnection extends PDO
 {
     public function __construct($file = 'dbsettings.ini')
     {
+
         if (!$settings = parse_ini_file($file, TRUE)) throw new exception('Unable to open ' . $file . '.');
 
           $driver = $settings['database']['driver'];
